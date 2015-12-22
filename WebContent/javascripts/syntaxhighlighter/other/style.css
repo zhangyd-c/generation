@@ -1,0 +1,35 @@
+﻿body{font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+input,select{ height: 24px; padding: 2px 0; font-size: 14px; line-height: 1.42857143; color: #555555; background-color: #ffffff; background-image: none; border: 1px solid #cccccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
+select{height:auto;}
+input[type="button"],input[type="submit"],select{cursor:pointer;}
+input[type="button"]:hover{background-color: #D2D8DE}
+input[type="submit"]:hover{background-color: #D2D8DE}
+#navigator{overflow: visible;}
+#navList{position: relative;}
+#navList .select{background-color: #343434;}
+#navList .xiala{position: absolute; background-color: black; width: 118px; color: #bbb; text-align: center; top:60px;display: none}
+#navList .xiala dd {height: 40px; line-height: 40px;cursor: pointer;  font-size: 1.2em;font-family: '微软雅黑';color: #bbb}
+#navList .xiala dd a{color: #bbb}
+#navList .xiala dd:hover{background-color: #444444;color: white;}
+.shadow{position: absolute; height: 100%; width: 100%; z-index: 999; background-color: black; filter: alpha(opacity=30); -moz-opacity: 0.3; opacity: 0.3; display: none;}
+.addProjectDivParent{position: relative;}
+.sendVerisionDiv {display:none;color:#333333;position: absolute; z-index: 1000; height: 600px; width: 900px; background-color: white; top: 40px; left: 50%; margin-left: -450px; -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);}
+.sendVerisionDiv .titile{height:40px; line-height: 40px; background-color: #112438; font-size: 18px; color: white; padding-left: 10px;}
+.addProjectDiv {display:none;color:#333333;position: absolute; z-index: 1000; height: auto; width: 900px; background-color: white; top: 40px; left: 50%; margin-left: -450px; -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);}
+.addProjectDiv .titile{height:40px; line-height: 40px; background-color: #112438; font-size: 18px; color: white; padding-left: 10px;}
+.addProjectDiv #addProjectTable {margin: auto; margin-top: 10px; margin-bottom: 20px;border-collapse:separate; border-spacing:10px;}
+.addProjectDiv #addProjectTable input{display: block;  height: 24px; width: 600px;    padding: 2px 0; font-size: 14px;    line-height: 1.42857143;    color: #555555;    background-color: #ffffff;    background-image: none;    border: 1px solid #cccccc;    border-radius: 4px;    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
+.addProjectDiv #addProjectTable select{display: block;  height: 30px; width: 600px; font-size: 14px;    line-height: 1.42857143;    color: #555555;    background-color: #ffffff;    background-image: none;    border: 1px solid #cccccc;    border-radius: 4px;    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
+.addProjectDiv #addProjectTable .name{float: right;padding-right: 20px}
+.addProjectDiv #addProjectTable .red{color: red}
+.addProjectDiv #addProjectTable .myButton{width: 80px;height: 40px; display:inline; margin-right: 20px; cursor: pointer;}
+.addProjectDiv #addProjectTable .myButton:hover{background: #D4D4D4}
+.projectsTable {border: 1px solid #e8e8e8;}
+.projectsTable td{border-bottom: 1px solid #e8e8e8;border-right: 1px solid #e8e8e8;text-align: center; padding: 5px 0;}
+.projectsTable th{border-bottom: 1px solid #e8e8e8;border-right: 1px solid #e8e8e8;text-align: center;background-color: #eee; padding: 4px 0;}
+.projectsTable .master{width: 150px;}
+.projectsTable .projectName{width: 250px;}
+.projectsTable .url{width: 300px;}
+.projectsTable .action{width: 300px;}
+.projectsTable button{margin-right: 8px;color: #ffffff; background-color: #112438; border-color: #0b1724;  display: inline-block;margin-bottom: 0; font-weight: normal; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.projectsTable button:hover{background-color: #000000;color:#bbb}

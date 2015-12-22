@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>maven_web</display-name>
+
+	<!-- 跳转生成java页面 -->
+	<servlet>
+		<servlet-name>GenerationJavaViewServlet</servlet-name>
+		<servlet-class>com.generation.servlet.GenerationJavaViewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenerationJavaViewServlet</servlet-name>
+		<url-pattern>/GenerationJavaViewServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 跳转生成mapper页面 -->
+	<servlet>
+		<servlet-name>GenerationMapperViewServlet</servlet-name>
+		<servlet-class>com.generation.servlet.GenerationMapperViewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenerationMapperViewServlet</servlet-name>
+		<url-pattern>/GenerationMapperViewServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 查询数据库列表 -->
+	<servlet>
+		<servlet-name>GenerationOfGetDBNamesServlet</servlet-name>
+		<servlet-class>com.generation.servlet.GenerationOfGetDBNamesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenerationOfGetDBNamesServlet</servlet-name>
+		<url-pattern>/GenerationOfGetDBNamesServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 查询数据库数据表列表 -->
+	<servlet>
+		<servlet-name>GenerationOfTablesServlet</servlet-name>
+		<servlet-class>com.generation.servlet.GenerationOfTablesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenerationOfTablesServlet</servlet-name>
+		<url-pattern>/GenerationOfTablesServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 生成java -->
+	<servlet>
+		<servlet-name>GenerationClassServlet</servlet-name>
+		<servlet-class>com.generation.servlet.GenerationClassServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenerationClassServlet</servlet-name>
+		<url-pattern>/GenerationClassServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 生成mapper -->
+	<servlet>
+		<servlet-name>GenerationMapperServlet</servlet-name>
+		<servlet-class>com.generation.servlet.GenerationMapperServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenerationMapperServlet</servlet-name>
+		<url-pattern>/GenerationMapperServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/assets/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/javascripts/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/images/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/css/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/templates/*</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
